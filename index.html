@@ -1,0 +1,28 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <h1>Find your film</h1>
+            <a href="watchlist.html" id="my-watchlist-btn">My Watchlist</a>
+        </header>
+        <nav>
+            <form class="example">
+                <input id="movie-search" type="text" placeholder="Search for a movie" name="search">
+                <button id="search-btn">Search</button>
+            </form>
+        </nav>
+        <div class="placeholder" id="placeholder">
+            <img class="placeholder-icon" src="icons/film.png">
+            <h3>Start exploring</h3>
+        </div>
+        <div class="no-results" id="no-results">
+            <h3>Unable to find what you're looking <br>
+            for. Please try another search.</h3>
+        </div>
+        <div class="results" id="results">
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
