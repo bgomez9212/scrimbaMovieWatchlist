@@ -1,43 +1,44 @@
-html, body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-    color: #FFFFFF;
-    height: 208px;
-    background: black;
-    background-image: url("images/bg-image.avif");
-    background-size: 100%;
-    background-position-y: -185px;
-    background-color: #616161;
-    background-blend-mode: multiply;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  color: #ffffff;
+  height: 208px;
+  background: black;
+  background-image: url("images/bg-image.avif");
+  background-size: 100%;
+  background-position-y: 25%;
+  background-color: #616161;
+  background-blend-mode: multiply;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header > h1 {
-    font-size: 2.688rem;
-    margin-left: 10%;
+  font-size: 2.688rem;
+  margin-left: 10%;
 }
 
 header > a {
-    font-size: 0.875rem;
-    margin-right: 8%;
-    background: none;
-    color: #FFFFFF;
-    border: none;
-    padding: 20px;
-    cursor: pointer;
-    text-decoration: none;
+  font-size: 0.875rem;
+  margin-right: 8%;
+  background: none;
+  color: #ffffff;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 nav {
-    width: 80%;
-    margin-left: 10%;
+  width: 80%;
+  margin-left: 10%;
 }
 
 * {
@@ -45,7 +46,7 @@ nav {
 }
 
 /* Style the search field */
-form.example input[type=text] {
+form.example input[type="text"] {
   font-size: 17px;
   border: 1px solid grey;
   float: left;
@@ -55,7 +56,7 @@ form.example input[type=text] {
   border-radius: 5px 0 0 5px;
   background-image: url("icons/mag-glass.png");
   background-repeat: no-repeat;
-  background-position: 3% 50%;
+  background-position: 15px 50%;
   font-size: 14px;
   padding-left: 35px;
 }
@@ -74,7 +75,7 @@ form.example button {
 }
 
 nav {
-    margin-top: -20px;
+  margin-top: -20px;
 }
 
 /* .results {
@@ -96,94 +97,94 @@ nav {
     margin-top: .5em;
 } */
 
-.filmData > img{
-    width: 99px;
-    height: 147px;
-    margin-right: 21px;
+.filmData > img {
+  width: 99px;
+  height: 147px;
+  margin-right: 21px;
 }
 
 .title > h3 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .title > .rating,
 .info {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .synopsis {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .filmData:first-child {
-    margin-top: 63px;
-    margin-bottom: 24px;
+  margin-top: 63px;
+  margin-bottom: 24px;
 }
 
 .filmData {
-    display: flex;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 24px;
-    padding-bottom: 20px;;
-    border-bottom: 1px solid gray;
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
 }
 
 .rating {
-    border: none;
-    background: none;
-    padding: 0 20px;
-    background-image: url('icons/star.png');
-    background-repeat: no-repeat;
-    background-position: 5% 35%;
-    background-size: 20%;
+  border: none;
+  background: none;
+  padding: 0 20px;
+  background-image: url("icons/star.png");
+  background-repeat: no-repeat;
+  background-position: 5% 35%;
+  background-size: 20%;
 }
 
 .title,
 .info,
 .synopsis {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    margin-right: 19px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-right: 19px;
 }
 
 .info > p {
-   margin-right: 19px;
+  margin-right: 19px;
 }
 
-.results{
-    display: flex;
-    flex-direction: column;
+.results {
+  display: flex;
+  flex-direction: column;
 }
 
-.placeholder-icon{
-    width: 70px;
+.placeholder-icon {
+  width: 70px;
 }
 
-.placeholder{
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.placeholder {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.no-results{
-    height: 60vh;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.no-results {
+  height: 60vh;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .add-to-watchlist {
-    border: none;
-    background: none;
-    padding: 0 20px;
-    background-image: url('icons/add.png');
-    background-repeat: no-repeat;
-    background-position: 0% 50%;
-    background-size: 15%;
-    cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0 20px;
+  background-image: url("icons/add.png");
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  background-size: 15%;
+  cursor: pointer;
 }
