@@ -3,6 +3,7 @@ function getFilmIdArray() {
   Object.keys(localStorage).forEach(function (key) {
     filmIdArray.push(localStorage.getItem(key));
   });
+  console.log(filmIdArray);
   return filmIdArray;
 }
 
@@ -29,8 +30,7 @@ async function getWatchlistHtml(IdArray) {
                         <p class="genre">${filmData.Genre}</p>
                         <button
                             class="remove-from-watchlist"
-                            id="${filmData.imdbID}"
-                            onclick="removeFromWatchlist(${filmData.imdbID})">
+                            id="${filmId}">
                             Remove
                         </button>
                     </div>
@@ -44,6 +44,12 @@ async function getWatchlistHtml(IdArray) {
   return watchlistHtml;
 }
 
+document.addEventListener("click", function (e) {
+  if (e.target && e.target.className === "remove-from-watchlist") {
+    removeFromWatchlist(e.target.id);
+  }
+});
+
 async function renderWatchlistHtml() {
   if (!watchlistIdArray.length) {
     document.getElementById("placeholder").style.display = "flex";
@@ -55,9 +61,9 @@ async function renderWatchlistHtml() {
   }
 }
 
-function removeFromWatchlist(element) {
-  localStorage.removeItem(element.id);
-  let removedIndex = watchlistIdArray.indexOf(element.id);
+function removeFromWatchlist(id) {
+  localStorage.removeItem(id);
+  let removedIndex = watchlistIdArray.indexOf(id);
   watchlistIdArray.splice(removedIndex, 1);
   renderWatchlistHtml();
 }
